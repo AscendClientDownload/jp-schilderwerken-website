@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" width="320" height="100" role="img" aria-label="JP Schilderwerken logo">
+  <polygon points="45,8 80,28 80,68 45,88 10,68 10,28"
+           fill="none" stroke="#6B6B6B" stroke-width="6"/>
+  <text x="30" y="63" font-family="-apple-system, Arial, sans-serif" font-weight="700" font-size="34" fill="#E8622A">J</text>
+  <text x="50" y="63" font-family="-apple-system, Arial, sans-serif" font-weight="700" font-size="34" fill="#6B6B6B">P</text>
+  <line x1="100" y1="20" x2="100" y2="80" stroke="#6B6B6B" stroke-width="2"/>
+  <text x="115" y="58" font-family="-apple-system, Arial, sans-serif" font-weight="700" font-size="28" fill="#E8622A">Schilderwerken</text>
+</svg>
