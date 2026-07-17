@@ -140,6 +140,11 @@ a:hover {
   color: var(--color-white);
   padding: 5rem 0;
   text-align: center;
+  border-bottom: 4px solid var(--color-primary);
+}
+
+.hero-compact {
+  padding: 2.75rem 0;
 }
 
 .hero h1 {
@@ -284,6 +289,7 @@ a:hover {
   background: var(--color-dark);
   color: #C9C9C9;
   padding: 3rem 0 1.5rem;
+  border-top: 4px solid var(--color-primary);
 }
 
 .footer-grid {
