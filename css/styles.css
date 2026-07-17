@@ -279,10 +279,6 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-.review-cta .btn-outline {
-  border-color: var(--color-white);
-}
-
 /* Footer */
 .footer {
   background: var(--color-dark);
