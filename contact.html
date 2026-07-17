@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JP Schilderwerken</title>
+  <meta name="description" content="Neem contact op met JP Schilderwerken uit Houten voor een vrijblijvende offerte.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 0.4rem; font-size: 0.9rem; }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 0.75rem; border: 1px solid #C9C9C9; border-radius: var(--radius);
+      font-family: var(--font-family); font-size: 0.95rem;
+    }
+    .form-group textarea { min-height: 140px; resize: vertical; }
+    #form-status { margin-top: 1rem; font-weight: 600; }
+    #form-status.success { color: #1E7A34; }
+    #form-status.error { color: #B3261E; }
+    .contact-info-list { list-style: none; margin-top: 1rem; }
+    .contact-info-list li { margin-bottom: 0.75rem; }
+    @media (max-width: 800px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
+      <ul class="nav" id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>Vraag vrijblijvend een offerte aan of stel uw vraag &mdash; we reageren zo snel mogelijk.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <h2 style="text-align:left; margin-bottom:1.5rem;">Stuur een bericht</h2>
+        <form id="contact-form">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+          <div class="form-group">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefoonnummer</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Versturen</button>
+          <p id="form-status"></p>
+        </form>
+      </div>
+      <div>
+        <h2 style="text-align:left; margin-bottom:1.5rem;">Gegevens</h2>
+        <ul class="contact-info-list">
+          <li><strong>Adres</strong><br>Molenaarserf 57, 3991 KR Houten</li>
+          <li><strong>Telefoon</strong><br><a href="tel:+31642038702">06 42 03 87 02</a></li>
+          <li><strong>E-mail</strong><br><a href="mailto:info@jp-schilderwerken.com">info@jp-schilderwerken.com</a></li>
+          <li><strong>Openingstijden</strong><br>Ma &ndash; Vr: 08:00 &ndash; 16:00</li>
+          <li><strong>Google reviews</strong><br><a href="https://g.page/r/Cd4bdeo8upZgEBM/review" target="_blank" rel="noopener">Deel of bekijk een review</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>JP Schilderwerken</h3>
+          <p>Molenaarserf 57<br>3991 KR Houten</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="tel:+31642038702">06 42 03 87 02</a><br>
+          <a href="mailto:info@jp-schilderwerken.com">info@jp-schilderwerken.com</a></p>
+        </div>
+        <div>
+          <h3>Openingstijden</h3>
+          <p>Ma &ndash; Vr: 08:00 &ndash; 16:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 JP Schilderwerken. <a href="privacy.html">Privacy &amp; disclaimer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
