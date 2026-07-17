@@ -16,7 +16,7 @@
 - Palette: logo orange `#E8622A` as accent, neutral gray/white base; these are placeholders until the client sends real huisstijlkleuren hex codes. (Spec: Visual design)
 - GA4 measurement ID and Web3Forms access key ship as clearly-marked placeholders (`G-XXXXXXXXXX`, `YOUR_WEB3FORMS_ACCESS_KEY`) — real values are pending external setup, not part of this build. (Spec: Out of scope)
 - No automated test framework is introduced (would contradict the "no build step" decision). Every task's "test" step is a precise manual browser verification using a local static server, with exact URLs and exact expected results.
-- Real client photos are not yet available (client is a chat attachment, not a file on disk, and remaining project photos are still being sorted by the client). Where the spec calls for real photos, use clearly-labeled CSS placeholder blocks instead of fabricated photos; recreate the logo as a hand-built inline SVG (closely matching the real logo: gray hexagon outline, orange "J" + gray "P" lockup, "Schilderwerken" wordmark) since the logo's visual design is known but its binary file is not on disk.
+- UPDATE (post-Task-1): the client's real logo and two work photos were located on disk and added to `assets/images/` (`logo.png`, `logo-dark.png`, `logo-mark.png`, `werk-deur.jpg`, `werk-spandoek.jpg`). The header logo reference is `assets/images/logo.png` (not the originally-planned hand-built `logo.svg`, which still exists in the repo but is unused) in every task's header markup below. The Home page's "Ons werk" section now uses `werk-deur.jpg`/`werk-spandoek.jpg` via the `.work-photo` CSS class instead of `.placeholder-photo`. Remaining project photos are still being sorted by the client during his vacation — continue using `.placeholder-photo` blocks for any further imagery not yet supplied.
 
 ---
 
@@ -491,7 +491,7 @@ a:hover {
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
@@ -659,7 +659,7 @@ git commit -m "Add shared styles, logo, and home page"
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
@@ -787,7 +787,7 @@ git commit -m "Add over-ons page"
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
@@ -936,7 +936,7 @@ git commit -m "Add diensten page"
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
@@ -1114,7 +1114,7 @@ git commit -m "Add contact page with Web3Forms-backed contact form"
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.svg" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
