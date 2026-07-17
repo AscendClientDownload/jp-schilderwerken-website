@@ -78,7 +78,19 @@ function initCookieConsent() {
   });
 }
 
+function initNavToggle() {
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav');
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', function () {
+    const isOpen = nav.classList.toggle('nav-open');
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   initContactForm();
   initCookieConsent();
+  initNavToggle();
 });
