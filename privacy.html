@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy &amp; disclaimer | JP Schilderwerken</title>
   <meta name="description" content="Privacyverklaring en disclaimer van JP Schilderwerken.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <style>
     .legal-content h2 { text-align: left; font-size: 1.3rem; margin: 2rem 0 0.75rem; }
@@ -17,21 +17,33 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png?v=2" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="over-ons.html">Over ons</a></li>
         <li><a href="diensten.html">Diensten</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="hero hero-compact">
-    <div class="container">
+  <section class="hero hero-compact hero-slideshow-wrap">
+    <div class="hero-slideshow" id="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('assets/images/werk-buiten-steiger.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-deur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-binnen-deuren.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-behang-mural.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-houtrot.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-spuitwerk-kast.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-steiger-banner.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-voordeur.jpg')"></div>
+    </div>
+    <div class="hero-overlay hero-overlay-light"></div>
+    <div class="container hero-content">
       <h1>Privacy &amp; disclaimer</h1>
+      <div class="carousel-dots hero-dots" id="hero-slideshow-dots"></div>
     </div>
   </section>
 
@@ -96,6 +108,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

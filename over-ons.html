@@ -4,69 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Over ons | JP Schilderwerken</title>
-  <meta name="description" content="Maak kennis met JP Schilderwerken uit Houten: een schildersbedrijf met vakmanschap dat van vader op zoon is doorgegeven.">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Maak kennis met JP Schilderwerken uit Houten: vakkundig, veilig en persoonlijk schilderwerk voor particulieren en bedrijven.">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png?v=2" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="over-ons.html" aria-current="page">Over ons</a></li>
         <li><a href="diensten.html">Diensten</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="hero hero-compact">
-    <div class="container">
+  <section class="hero hero-compact hero-slideshow-wrap">
+    <div class="hero-slideshow" id="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('assets/images/werk-buiten-voordeur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-binnen-deuren.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-behang-mural.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-deur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-houtrot.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-spuitwerk-kast.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-steiger-banner.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-steiger.jpg')"></div>
+    </div>
+    <div class="hero-overlay hero-overlay-light"></div>
+    <div class="container hero-content">
       <h1>Over JP Schilderwerken</h1>
-      <p>Vakmanschap, persoonlijk contact en een net eindresultaat &mdash; dat is waar ik voor sta.</p>
+      <p>Ik sta voor vakmanschap, persoonlijk contact en een net eindresultaat.</p>
+      <div class="carousel-dots hero-dots" id="hero-slideshow-dots"></div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container">
-      <h2>Mijn verhaal</h2>
-      <p class="section-intro">
-        Het schildersvak is mij door mijn vader doorgegeven. Hij heeft mij niet alleen de techniek geleerd,
-        maar vooral ook de liefde voor het ambacht overgedragen. Van de omgang met klanten tot veilig werken
-        op de steiger, tot het afleveren van een net stukje schilderwerk &mdash; ieder aspect van het vak heb
-        ik met aandacht geleerd en pas ik dagelijks toe.
-      </p>
-      <p class="section-intro">
-        Als eenmanszaak werk ik voor particuliere en zakelijke klanten in en rond Houten, aan alles wat met
-        schilderwerk te maken heeft in en om uw woning of bedrijfspand.
-      </p>
+    <div class="container profile-grid">
+      <div class="placeholder-photo" style="min-height:380px;">Foto van Justin<br>(volgt)</div>
+      <div>
+        <h2 style="text-align:left; margin-bottom:1rem;">Mijn verhaal</h2>
+        <p class="section-intro" style="text-align:left; margin:0;">
+          Tekst volgt.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section class="section section-alt">
+  <section class="review-cta">
     <div class="container">
-      <h2>Waar ik voor sta</h2>
-      <div class="usp-grid">
-        <div class="usp-card">
-          <div class="usp-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="6" rx="1.5"/><line x1="12" y1="10" x2="12" y2="15"/><rect x="9" y="15" width="6" height="5" rx="1"/></svg></div>
-          <h3>Doorgegeven vakmanschap</h3>
-          <p>Techniek en liefde voor het vak, geleerd van mijn vader.</p>
-        </div>
-        <div class="usp-card">
-          <div class="usp-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5c0 4.4-4 8-9 8-1 0-2-.1-2.9-.4L3 21l1.6-4.3A7.9 7.9 0 0 1 3 11.5c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg></div>
-          <h3>Persoonlijk contact</h3>
-          <p>Heldere afspraken en een aanspreekpunt gedurende het hele project.</p>
-        </div>
-        <div class="usp-card">
-          <div class="usp-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l6 3v5c0 4.5-3 7.5-6 9-3-1.5-6-4.5-6-9V6l6-3z"/><path d="M8.5 12l2.5 2.5 5-5.5"/></svg></div>
-          <h3>Veilig en netjes werken</h3>
-          <p>Van steigerwerk tot de laatste verfstreek: veilig en zorgvuldig.</p>
-        </div>
-      </div>
+      <h2>Interesse in een offerte?</h2>
+      <p>Neem gerust contact op, ik denk graag met u mee.</p>
+      <a href="contact.html" class="btn btn-outline">Offerte aanvragen</a>
     </div>
   </section>
 
@@ -101,6 +94,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

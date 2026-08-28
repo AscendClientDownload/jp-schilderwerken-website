@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | JP Schilderwerken</title>
   <meta name="description" content="Neem contact op met JP Schilderwerken uit Houten voor een vrijblijvende offerte.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <style>
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
@@ -30,22 +30,34 @@
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png?v=2" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="over-ons.html">Over ons</a></li>
         <li><a href="diensten.html">Diensten</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="hero hero-compact">
-    <div class="container">
+  <section class="hero hero-compact hero-slideshow-wrap">
+    <div class="hero-slideshow" id="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('assets/images/werk-steiger-banner.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-voordeur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-binnen-deuren.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-behang-mural.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-houtrot.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-spuitwerk-kast.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-deur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-steiger.jpg')"></div>
+    </div>
+    <div class="hero-overlay hero-overlay-light"></div>
+    <div class="container hero-content">
       <h1>Contact</h1>
-      <p>Vraag vrijblijvend een offerte aan of stel uw vraag &mdash; we reageren zo snel mogelijk.</p>
+      <p>Vraag vrijblijvend een offerte aan of stel uw vraag. We reageren zo snel mogelijk.</p>
+      <div class="carousel-dots hero-dots" id="hero-slideshow-dots"></div>
     </div>
   </section>
 
@@ -84,16 +96,10 @@
           <li><strong>E-mail</strong><br><a href="mailto:info@jp-schilderwerken.com">info@jp-schilderwerken.com</a></li>
           <li><strong>Openingstijden</strong><br>Ma &ndash; Vr: 08:00 &ndash; 16:00</li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <h2>Werkgebied</h2>
-      <p class="section-intro">Actief in en rond Houten.</p>
-      <div class="map-embed">
-        <iframe src="https://www.google.com/maps?q=Molenaarserf+57,+3991+KR+Houten&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Werkgebied JP Schilderwerken - Molenaarserf 57, Houten"></iframe>
+        <div class="map-embed map-embed-compact">
+          <iframe src="https://www.google.com/maps?q=Molenaarserf+57,+3991+KR+Houten&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Werkgebied JP Schilderwerken - Molenaarserf 57, Houten"></iframe>
+        </div>
+        <p class="section-intro" style="text-align:left; margin:0.75rem 0 0; font-size:0.85rem;">Actief in en rond Houten, en in de rest van de provincie Utrecht.</p>
       </div>
     </div>
   </section>
@@ -129,6 +135,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>

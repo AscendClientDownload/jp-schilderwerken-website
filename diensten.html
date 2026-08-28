@@ -5,58 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diensten | JP Schilderwerken</title>
   <meta name="description" content="Binnen- en buitenschilderwerk, houtrotreparaties, lak- en latexspuitwerk en behangwerkzaamheden door JP Schilderwerken uit Houten.">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <a href="index.html" class="logo-link">
-        <img src="assets/images/logo.png" alt="JP Schilderwerken logo">
+        <img src="assets/images/logo.png?v=2" alt="JP Schilderwerken logo">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="over-ons.html">Over ons</a></li>
         <li><a href="diensten.html" aria-current="page">Diensten</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <section class="hero hero-compact">
-    <div class="container">
+  <section class="hero hero-compact hero-slideshow-wrap">
+    <div class="hero-slideshow" id="hero-slideshow">
+      <div class="hero-slide active" style="background-image:url('assets/images/werk-houtrot.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-spuitwerk-kast.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-behang-mural.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-binnen-deuren.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-voordeur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-deur.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-steiger-banner.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-steiger.jpg')"></div>
+    </div>
+    <div class="hero-overlay hero-overlay-light"></div>
+    <div class="container hero-content">
       <h1>Onze diensten</h1>
       <p>Alles wat met schilderwerk te maken heeft in en om uw woning of bedrijfspand.</p>
+      <div class="carousel-dots hero-dots" id="hero-slideshow-dots"></div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="card-grid">
-        <div class="card">
-          <h3>Binnenschilderwerk</h3>
-          <p>Wanden, plafonds, kozijnen en deuren vakkundig geschilderd voor een frisse, strakke afwerking binnenshuis.</p>
+      <div class="service-carousel">
+        <button class="carousel-arrow carousel-prev" id="carousel-prev" aria-label="Vorige dienst">&#8249;</button>
+        <div class="service-carousel-viewport" id="carousel-viewport">
+          <div class="service-carousel-panel" id="carousel-panel-a">
+            <div class="placeholder-photo service-carousel-photo"></div>
+            <div class="service-carousel-body">
+              <div class="usp-icon service-carousel-icon"></div>
+              <h3></h3>
+              <p></p>
+              <ul class="service-carousel-bullets"></ul>
+            </div>
+          </div>
+          <div class="service-carousel-panel" id="carousel-panel-b">
+            <div class="placeholder-photo service-carousel-photo"></div>
+            <div class="service-carousel-body">
+              <div class="usp-icon service-carousel-icon"></div>
+              <h3></h3>
+              <p></p>
+              <ul class="service-carousel-bullets"></ul>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <h3>Buitenschilderwerk</h3>
-          <p>Gevels, kozijnen en houtwerk beschermd en verfraaid met duurzaam buitenschilderwerk.</p>
-        </div>
-        <div class="card">
-          <h3>Houtrotreparaties</h3>
-          <p>Aangetast hout vakkundig hersteld of vervangen, zodat kozijnen en gevel weer jaren meegaan.</p>
-        </div>
-        <div class="card">
-          <h3>Lak- en latexspuitwerk</h3>
-          <p>Een strakke, egale afwerking op deuren, kozijnen en meubels dankzij professioneel spuitwerk.</p>
-        </div>
-        <div class="card">
-          <h3>Behangwerkzaamheden</h3>
-          <p>Van voorbereiding van de ondergrond tot de laatste baan: netjes en vakkundig behangen.</p>
-        </div>
+        <button class="carousel-arrow carousel-next" id="carousel-next" aria-label="Volgende dienst">&#8250;</button>
       </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
       <div style="text-align:center; margin-top:2.5rem;">
-        <a href="contact.html" class="btn btn-primary">Vraag een offerte aan</a>
+        <a href="contact.html" class="btn btn-primary">Offerte aanvragen</a>
       </div>
     </div>
   </section>
@@ -92,6 +107,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=10"></script>
 </body>
 </html>
