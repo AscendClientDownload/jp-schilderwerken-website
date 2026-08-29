@@ -94,41 +94,54 @@ const SERVICES = [
     photo: 'Foto: binnenschilderwerk (volgt)',
     photoSrc: 'assets/images/werk-binnen-deuren.jpg',
     title: 'Binnenschilderwerk',
-    text: 'Van een enkele kamer tot de hele woning: ik zorg voor een strakke, duurzame afwerking van wanden, plafonds, kozijnen en deuren. Het oppervlak wordt eerst grondig voorbereid, zodat de verf goed hecht en het resultaat jarenlang mooi blijft.',
+    paragraphs: [
+      'Een frisse uitstraling in huis begint met goed voorbereid schilderwerk. Ik verzorg binnenschilderwerk aan onder andere wanden, plafonds, deuren, kozijnen en ander houtwerk.',
+      'Voor een strak resultaat besteed ik veel aandacht aan de voorbereiding. Beschadigingen worden waar nodig hersteld, oppervlakken worden goed voorbereid en pas daarna wordt het schilderwerk aangebracht.',
+      'Of het nu gaat om één ruimte of meerdere vertrekken: ik zorg voor een nette en verzorgde afwerking.',
+    ],
     icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>',
-    bullets: ['Wanden, plafonds, kozijnen en deuren', 'Grondige voorbereiding vooraf', 'Strakke, nette oplevering'],
   },
   {
     photo: 'Foto: buitenschilderwerk (volgt)',
     photoSrc: 'assets/images/werk-buiten-voordeur.jpg',
     title: 'Buitenschilderwerk',
-    text: 'Buitenschilderwerk beschermt uw kozijnen, deuren en ander houtwerk tegen weer en wind, en geeft meteen een frisse uitstraling. Met een goede voorbereiding zorg ik voor een verflaag die lang meegaat.',
+    paragraphs: [
+      'Goed buitenschilderwerk is niet alleen belangrijk voor de uitstraling van uw woning, maar ook voor de bescherming van het houtwerk.',
+      'Kozijnen, deuren, ramen en ander buitenschilderwerk krijgen dagelijks te maken met regen, wind en zon. Een goed verfsysteem en een zorgvuldige voorbereiding helpen om het schilderwerk langer mooi en beschermd te houden.',
+      'Ik beoordeel eerst de staat van het bestaande schilderwerk en bespreek wat er nodig is voordat ik aan de slag ga.',
+    ],
     icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>',
-    bullets: ['Kozijnen, deuren en houtwerk', 'Bescherming tegen weer en wind', 'Duurzame, langhoudende verflaag'],
   },
   {
     photo: 'Foto: houtrotreparatie (volgt)',
     photoSrc: 'assets/images/werk-houtrot.jpg',
     title: 'Houtrotreparaties',
-    text: 'Houtrot in kozijnen of ramen breidt zich uit als het niet op tijd wordt aangepakt. Ik herstel of vervang het aangetaste hout vakkundig, zodat uw kozijnen en ramen er weer jaren tegen kunnen en klaar zijn voor een nieuwe verflaag.',
+    paragraphs: [
+      'Houtrot kan ervoor zorgen dat kozijnen, ramen of ander houtwerk steeds verder worden aangetast. Daarom is het belangrijk om houtrot op tijd aan te pakken.',
+      'Waar mogelijk herstel ik het aangetaste hout vakkundig, zodat het onderdeel weer netjes kan worden afgewerkt en beschermd.',
+      'Ik kijk daarbij niet alleen naar het zichtbare probleem, maar ook naar de oorzaak en de staat van het omliggende schilderwerk.',
+    ],
     icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 21V9l6-5 6 5v12"/><path d="M10 21v-6h4v6"/></svg>',
-    bullets: ['Herstel of vervanging van aangetast hout', 'Kozijnen en ramen weer jaren mee', 'Klaar voor een nieuwe verflaag'],
   },
   {
     photo: 'Foto: lak-/latexspuitwerk (volgt)',
     photoSrc: 'assets/images/werk-spuitwerk-kast.jpg',
     title: 'Lak- en latexspuitwerk',
-    text: 'Met professioneel spuitwerk krijgt u een egale, strakke afwerking die met kwast of roller lastiger te bereiken is. Geschikt voor deuren, kozijnen en meubels, met een nette voorbereiding zodat het eindresultaat overal even glad is.',
+    paragraphs: [
+      'Wilt u een echt strak en modern resultaat? Met lak- en latexspuitwerk kan ik verschillende oppervlakken mooi en egaal afwerken.',
+      'Denk bijvoorbeeld aan deuren, kozijnen, wanden, plafonds en ander houtwerk. Ik bespreek vooraf de mogelijkheden en zorg voor een goede voorbereiding en een nette afwerking.',
+    ],
     icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18"/></svg>',
-    bullets: ['Egale, strakke afwerking', 'Geschikt voor deuren, kozijnen en meubels', 'Professioneel spuitwerk'],
   },
   {
     photo: 'Foto: behangwerk (volgt)',
     photoSrc: 'assets/images/werk-behang-mural.jpg',
     title: 'Behangwerkzaamheden',
-    text: 'Een goed behangresultaat begint bij de voorbereiding: de ondergrond wordt netjes gladgemaakt voordat er één baan wordt gehangen. Van vlies- tot vinylbehang, ik werk secuur zodat naden en aansluitingen mooi wegvallen.',
+    paragraphs: [
+      'Een ruimte opnieuw aankleden met behang vraagt om een goede voorbereiding en nauwkeurige afwerking.',
+      'Ik verzorg het behangwerk van voorbereiding tot het aanbrengen van de laatste baan. Daarbij staat een strak en netjes eindresultaat centraal.',
+    ],
     icon: '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 8h18M8 3v18"/></svg>',
-    bullets: ['Vlies- en vinylbehang', 'Nette voorbereiding van de ondergrond', 'Naden en aansluitingen mooi weggewerkt'],
   },
 ];
 
@@ -154,6 +167,8 @@ function initServiceCarousel() {
     if (service.photoSrc) {
       photoEl.style.backgroundImage = "url('" + service.photoSrc + "')";
       photoEl.classList.add('has-photo');
+      photoEl.setAttribute('role', 'img');
+      photoEl.setAttribute('aria-label', 'Foto van uitgevoerd werk: ' + service.title);
       photoEl.textContent = '';
     } else {
       photoEl.style.backgroundImage = '';
@@ -162,9 +177,8 @@ function initServiceCarousel() {
     }
     panel.querySelector('.service-carousel-icon').innerHTML = service.icon;
     panel.querySelector('h3').textContent = service.title;
-    panel.querySelector('p').textContent = service.text;
-    panel.querySelector('.service-carousel-bullets').innerHTML = service.bullets.map(function (b) {
-      return '<li>' + b + '</li>';
+    panel.querySelector('.service-carousel-text').innerHTML = service.paragraphs.map(function (p) {
+      return '<p>' + p + '</p>';
     }).join('');
   }
 

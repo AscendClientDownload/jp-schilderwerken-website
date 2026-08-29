@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | JP Schilderwerken</title>
-  <meta name="description" content="Neem contact op met JP Schilderwerken uit Houten voor een vrijblijvende offerte.">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <meta name="description" content="Neem contact op met JP Schilderwerken, actief in de regio Utrecht, voor een vrijblijvende offerte.">
+  <link rel="stylesheet" href="css/styles.css?v=14">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <style>
     .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
@@ -16,6 +16,13 @@
       font-family: var(--font-family); font-size: 0.95rem;
     }
     .form-group textarea { min-height: 140px; resize: vertical; }
+    .form-row { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 1rem; }
+    .form-inline-options { display: flex; gap: 1.5rem; align-items: center; }
+    .form-inline-options label { display: flex; align-items: center; gap: 0.4rem; font-weight: 600; font-size: 0.9rem; margin-bottom: 0; }
+    .form-inline-options input[type="radio"] { width: auto; }
+    .form-checkbox-group { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .form-checkbox-group label { display: flex; align-items: center; gap: 0.5rem; font-weight: 500; font-size: 0.9rem; margin-bottom: 0; }
+    .form-checkbox-group input[type="checkbox"] { width: auto; }
     #form-status { margin-top: 1rem; font-weight: 600; }
     #form-status.success { color: #1E7A34; }
     #form-status.error { color: #B3261E; }
@@ -23,6 +30,8 @@
     .contact-info-list li { margin-bottom: 0.75rem; }
     @media (max-width: 800px) {
       .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .form-checkbox-group { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -32,18 +41,22 @@
       <a href="index.html" class="logo-link">
         <img src="assets/images/logo.png?v=2" alt="JP Schilderwerken logo">
       </a>
+      <div class="header-right">
+        <a href="tel:+31642038702" class="header-phone"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="header-phone-text">06 42 03 87 02</span></a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menu openen" aria-expanded="false">&#9776;</button>
       <ul class="nav" id="nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="over-ons.html">Over ons</a></li>
+        <li><a href="over-ons.html">Over mij</a></li>
         <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="projecten.html">Projecten</a></li>
         <li><a href="contact.html" class="nav-cta" aria-current="page">Contact</a></li>
       </ul>
+      </div>
     </div>
   </header>
 
   <section class="hero hero-compact hero-slideshow-wrap">
-    <div class="hero-slideshow" id="hero-slideshow">
+    <div class="hero-slideshow" id="hero-slideshow" aria-hidden="true">
       <div class="hero-slide active" style="background-image:url('assets/images/werk-steiger-banner.jpg')"></div>
       <div class="hero-slide" style="background-image:url('assets/images/werk-buiten-voordeur.jpg')"></div>
       <div class="hero-slide" style="background-image:url('assets/images/werk-binnen-deuren.jpg')"></div>
@@ -56,7 +69,7 @@
     <div class="hero-overlay hero-overlay-light"></div>
     <div class="container hero-content">
       <h1>Contact</h1>
-      <p>Vraag vrijblijvend een offerte aan of stel uw vraag. We reageren zo snel mogelijk.</p>
+      <p>Vraag vrijblijvend een offerte aan of stel uw vraag. Ik reageer zo snel mogelijk.</p>
       <div class="carousel-dots hero-dots" id="hero-slideshow-dots"></div>
     </div>
   </section>
@@ -69,20 +82,49 @@
           <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
           <input type="checkbox" name="botcheck" class="hidden" style="display:none">
           <div class="form-group">
+            <label>Aanhef</label>
+            <div class="form-inline-options">
+              <label><input type="radio" name="salutation" value="Dhr."> Dhr.</label>
+              <label><input type="radio" name="salutation" value="Mevr."> Mevr.</label>
+            </div>
+          </div>
+          <div class="form-group">
             <label for="name">Naam</label>
             <input type="text" id="name" name="name" required>
           </div>
           <div class="form-group">
-            <label for="email">E-mailadres</label>
-            <input type="email" id="email" name="email" required>
+            <label for="address">Adres</label>
+            <div class="form-row">
+              <input type="text" id="address" name="address" placeholder="Straat en huisnummer">
+              <input type="text" id="postcode" name="postcode" placeholder="Postcode">
+              <input type="text" id="city" name="city" placeholder="Woonplaats">
+            </div>
           </div>
           <div class="form-group">
             <label for="phone">Telefoonnummer</label>
             <input type="tel" id="phone" name="phone">
           </div>
           <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Soort werkzaamheden</label>
+            <div class="form-checkbox-group">
+              <label><input type="checkbox" name="services[]" value="Binnenschilderwerk"> Binnenschilderwerk</label>
+              <label><input type="checkbox" name="services[]" value="Buitenschilderwerk"> Buitenschilderwerk</label>
+              <label><input type="checkbox" name="services[]" value="Houtrotreparaties"> Houtrotreparaties</label>
+              <label><input type="checkbox" name="services[]" value="Lak- en latexspuitwerk"> Lak- en latexspuitwerk</label>
+              <label><input type="checkbox" name="services[]" value="Behangwerkzaamheden"> Behangwerkzaamheden</label>
+            </div>
+          </div>
+          <div class="form-group">
             <label for="message">Bericht</label>
             <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="attachment">Foto's (optioneel)</label>
+            <input type="file" id="attachment" name="attachment" accept="image/*" multiple>
           </div>
           <button type="submit" class="btn btn-primary">Versturen</button>
           <p id="form-status"></p>
@@ -99,7 +141,16 @@
         <div class="map-embed map-embed-compact">
           <iframe src="https://www.google.com/maps?q=Molenaarserf+57,+3991+KR+Houten&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Werkgebied JP Schilderwerken - Molenaarserf 57, Houten"></iframe>
         </div>
-        <p class="section-intro" style="text-align:left; margin:0.75rem 0 0; font-size:0.85rem;">Actief in en rond Houten, en in de rest van de provincie Utrecht.</p>
+        <p class="section-intro" style="text-align:left; margin:0.75rem 0 0; font-size:0.85rem;">Actief in de regio Utrecht, met Houten als vestigingsplaats.</p>
+        <div class="card" style="margin-top:1.5rem; padding:1.25rem 1.5rem;">
+          <h3 style="color:var(--color-primary); margin-bottom:0.5rem; font-size:1rem;">Onderhoudsplan</h3>
+          <p style="color:var(--color-gray); font-size:0.9rem; margin-bottom:0.75rem;">Wilt u uw pand strak in de lak hebben en dit zo houden? Naast eenmalig schilderwerk denk ik ook graag met u mee over een onderhoudsplan op maat, zodat u nooit meer omkijkt naar achterstallig schilderwerk.</p>
+          <ul style="list-style:none; padding:0; margin:0; font-size:0.9rem; color:var(--color-gray);">
+            <li style="margin-bottom:0.4rem;">&#10003; Deskundige analyse van de staat van onderhoud</li>
+            <li style="margin-bottom:0.4rem;">&#10003; Onderhoudsplan op maat</li>
+            <li>&#10003; Kleur- en productadvies</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -128,13 +179,13 @@
   </footer>
 
   <div class="cookie-banner hidden" id="cookie-banner">
-    <p>Wij gebruiken cookies voor bezoekstatistieken (Google Analytics). Zie onze <a href="privacy.html">privacyverklaring</a> voor meer info.</p>
+    <p>Ik gebruik cookies voor bezoekstatistieken (Google Analytics). Zie mijn <a href="privacy.html">privacyverklaring</a> voor meer info.</p>
     <div class="cookie-actions">
       <button id="cookie-decline">Weigeren</button>
       <button id="cookie-accept">Accepteren</button>
     </div>
   </div>
 
-  <script src="js/main.js?v=10"></script>
+  <script src="js/main.js?v=14"></script>
 </body>
 </html>
