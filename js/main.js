@@ -145,6 +145,7 @@ function initVideoModal() {
 
   function open(src) {
     player.src = src;
+    player.muted = true;
     modal.classList.remove('hidden');
     player.play();
   }
