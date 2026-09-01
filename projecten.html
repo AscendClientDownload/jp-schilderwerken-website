@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projecten | JP Schilderwerken</title>
   <meta name="description" content="Een impressie van projecten die ik heb uitgevoerd: van binnen- en buitenschilderwerk tot houtrotreparaties, spuitwerk en behangwerk, in de regio Utrecht.">
-  <link rel="stylesheet" href="css/styles.css?v=15">
+  <link rel="stylesheet" href="css/styles.css?v=19">
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
@@ -60,14 +60,18 @@
           </div>
         </div>
         <div class="project-card">
-          <div class="project-card-photo" style="background-image:url('assets/images/werk-binnen-deuren.jpg')" role="img" aria-label="Foto van geschilderde binnendeuren"></div>
+          <button type="button" class="project-card-photo project-card-photo-video" style="background-image:url('assets/images/werk-paneeldeuren-spuit.jpg')" data-video-src="assets/videos/werk-paneeldeuren-spuit.mp4" aria-label="Video afspelen: paneeldeuren die professioneel gespoten worden">
+            <span class="play-button" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+          </button>
           <div class="project-card-body">
             <h3>Binnenschilderwerk paneeldeuren</h3>
-            <p>Klassieke paneeldeuren netjes in de lak gezet voor een strakke, verzorgde afwerking.</p>
+            <p>Meerdere paneeldeuren nauwkeurig gespoten voor een strakke, egale afwerking.</p>
           </div>
         </div>
         <div class="project-card">
-          <div class="project-card-photo" style="background-image:url('assets/images/werk-houtrot.jpg')" role="img" aria-label="Foto van houtrotreparatie aan kozijn"></div>
+          <div class="project-card-photo" style="background-image:url('assets/images/werk-houtrot-kozijn.jpg')" role="img" aria-label="Foto van houtrotreparatie aan kozijn, voor en na"></div>
           <div class="project-card-body">
             <h3>Houtrotreparatie kozijn</h3>
             <p>Aangetast hout vakkundig hersteld, zodat het kozijn klaar was voor een nieuwe, beschermende verflaag.</p>
@@ -131,6 +135,14 @@
     </div>
   </div>
 
-  <script src="js/main.js?v=15"></script>
+  <div class="video-modal hidden" id="video-modal">
+    <div class="video-modal-backdrop" id="video-modal-backdrop"></div>
+    <div class="video-modal-content">
+      <button type="button" class="video-modal-close" id="video-modal-close" aria-label="Video sluiten">&times;</button>
+      <video id="video-modal-player" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=19"></script>
 </body>
 </html>

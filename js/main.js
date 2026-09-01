@@ -135,9 +135,44 @@ function initHeroSlideshow() {
   slideshow.addEventListener('mouseleave', restart);
 }
 
+function initVideoModal() {
+  const modal = document.getElementById('video-modal');
+  if (!modal) return;
+
+  const player = document.getElementById('video-modal-player');
+  const backdrop = document.getElementById('video-modal-backdrop');
+  const closeBtn = document.getElementById('video-modal-close');
+
+  function open(src) {
+    player.src = src;
+    modal.classList.remove('hidden');
+    player.play();
+  }
+
+  function close() {
+    modal.classList.add('hidden');
+    player.pause();
+    player.removeAttribute('src');
+    player.load();
+  }
+
+  document.querySelectorAll('[data-video-src]').forEach(function (trigger) {
+    trigger.addEventListener('click', function () {
+      open(trigger.dataset.videoSrc);
+    });
+  });
+
+  backdrop.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !modal.classList.contains('hidden')) close();
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   initContactForm();
   initCookieConsent();
   initNavToggle();
   initHeroSlideshow();
+  initVideoModal();
 });
